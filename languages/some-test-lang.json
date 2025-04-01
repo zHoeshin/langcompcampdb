@@ -1,5 +1,5 @@
 {
-  "description": "This is the long description of the language. it is gonna be md formatted",
+  "description": "This is the long description of the language. it is gonna be md formatted\n\n$a + b$\n\nNo math? `at least code`. ||and spoilers||?",
   "features": {
     "general": [
       {"description": "Block/scope", "code": "[ ... ] or { ... } or ( ... )", "example": "{ var x = 5 }", "id": "g-block"},
