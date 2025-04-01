@@ -16,7 +16,7 @@
       {"description": "Multiplication", "code": "*", "example": "a * b", "id": "g-op-mul"},
       {"description": "Division", "code": "/", "example": "a / b", "id": "g-op-div-float"},
       {"description": "Exponentiation", "code": "^", "example": "a ^ b", "id": "g-op-exp"},
-      {"description": "Modulo", "code": "%", "example": "a % b", "id": "g-op-modulo"},
+      {"description": "Modulo", "code": "%", "example": "a % b", "id": "g-op-modulo"}
     ]
   }
 }
