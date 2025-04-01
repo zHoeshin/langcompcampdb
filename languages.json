@@ -1,6 +1,7 @@
 [
   {
     "name": "Some Language",
+    "id": "some-test-lang",
     "author": "Some Dude",
     "description": "A short description to appear in the search menu",
     "tags": ["OOP", "General", "Compiled"]
