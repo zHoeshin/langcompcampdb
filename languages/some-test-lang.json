@@ -1,10 +1,10 @@
 {
-  "description": "General purpose dynamically typed object oriented language",
+  "description": "literally a copy made for debugging purposes",
   "features": {
     "general": [
-      {"description": "Block/scope", "code": "indentation", "id": "g-block"},
+      {"description": "Block/scope", "code": "[ ... ] or { ... } or ( ... )", "example": "{ var x = 5 }", "id": "g-block"},
       {"description": "Comment", "code": "# ...", "example": "# some comment", "id": "g-comment"},
-      {"description": "Multiline comment(not nestable)", "code": "\"\"\" ... \"\"\"", "example": "\"\"\"some comment goes here\"\"\"", "id": "g-comment-m"},
+      {"description": "Multiline comment(nested)", "code": "#* ... *#", "example": "#* some \n multiline \n comment *#", "id": "g-comment-mn"},
       {"description": "Documentation comment", "code": "#- ... -#", "example": "#- params: \n @x : int -#", "id": "g-comment-d"},
       {"description": "Identifier regex", "code": "[A-Za-z_][A-Za-z_0-9]+", "example": "abc123", "id": "g-idregex"},
       {"description": "Case sensitivity", "code": "Sensitive", "id": "g-casesensitive"},
@@ -15,33 +15,8 @@
       {"description": "Substraction", "code": "-", "example": "a - b", "id": "g-op-sub"},
       {"description": "Multiplication", "code": "*", "example": "a * b", "id": "g-op-mul"},
       {"description": "Division", "code": "/", "example": "a / b", "id": "g-op-div-float"},
-      {"description": "Exponentiation", "code": "**", "example": "a ^ b", "id": "g-op-exp"},
-      {"description": "Modulo", "code": "%", "example": "a % b", "id": "g-op-modulo"},
-      {"description": "Bitwise AND", "code": "&", "example": "a & b", "id": "g-op-b-and"},
-      {"description": "Bitwise OR", "code": "|", "example": "a | b", "id": "g-op-b-or"},
-      {"description": "Bitwise XOR", "code": "^", "example": "a ^ b", "id": "g-op-b-xor"},
-      {"description": "Bitwose NOT", "code": "~", "example": "~a", "id": "g-op-b-not"},
-      {"description": "Logical AND", "code": "and", "example": "a and b", "id": "g-op-l-and"},
-      {"description": "Logical OR", "code": "or", "example": "a or b", "id": "g-op-l-or"},
-      {"description": "Logical NOT", "code": "not", "example": "not a", "id": "g-op-l-not"},
-      {"description": "Matrix multiplication", "code": "@", "example": "a @ b", "id": "g-op-matmul"},
-      {"description": "Negation", "code": "-", "example": "-a", "id": "g-op-neg"}
-    ],
-    "control-flow": [
-      {"description": "if then", "code": "if c:\n\tt", "example": "", "id": "cf-i"},
-      {"description": "if then-else", "code": "if c1:\n\tt\nelif c2:\n\tf", "example": "", "id": "cf-ie"},
-      {"description": "if then-else if then-else", "code": "if c1:\n\tt\nelif c2:\n\tf\nelif:\n\te", "example": "", "id": "cf-iee"},
-      {"description": "while", "code": "while c: ...", "example": "", "id": "cf-while"},
-      {"description": "for", "code": "for i in iterable: ...", "example": "for a in array: print(a)", "id": "cf-for-in"},
-      {"description": "try-except", "code": "try:\n\ts\nexcept e:\n\td", "example": "", "id": "cf-try"},
-      {"description": "continue", "code": "continue", "example": "", "id": "cf-continue"},
-      {"description": "break", "code": "break", "example": "", "id": "cf-break"}
-    ],
-    "functions": [
-      {"description": "Define function", "code": "def name(...args):\n\tbody", "example": "", "id": "f-define"},
-      {"description": "Call function", "code": "funcname(...args)", "example": "print('Hello', 'World')", "id": "f-call"},
-      {"description": "Return", "code": "", "example": "return\nreturn someval", "id": "f-return"},
-      {"description": "Anonymous function", "code": "lambda ...args: body", "example": "lambda a, b: a + b", "id": "f-lambda"}
+      {"description": "Exponentiation", "code": "^", "example": "a ^ b", "id": "g-op-exp"},
+      {"description": "Modulo", "code": "%", "example": "a % b", "id": "g-op-modulo"}
     ]
   }
 }
