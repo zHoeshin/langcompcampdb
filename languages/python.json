@@ -28,12 +28,12 @@
       {"description": "Negation", "code": "-", "example": "-a", "id": "g-op-neg"}
     ],
     "comparison": [
-      {"description": "Equal", "code": "==", "example": "", "id": "g-op-c-eq"},[
-      {"description": "Not equal", "code": "!=", "example": "", "id": "g-op-c-neq"},[
-      {"description": "Greater than", "code": ">", "example": "", "id": "g-op-c-greater"},[
-      {"description": "Less than", "code": "<", "example": "", "id": "g-op-c-less"},[
-      {"description": "Greater than or equal to", "code": ">=", "example": "", "id": "g-op-c-greatereq"},[
-      {"description": "Less than or equal to", "code": "<=", "example": "", "id": "g-op-c-lesseq"},[
+      {"description": "Equal", "code": "==", "example": "", "id": "g-op-c-eq"},
+      {"description": "Not equal", "code": "!=", "example": "", "id": "g-op-c-neq"},
+      {"description": "Greater than", "code": ">", "example": "", "id": "g-op-c-greater"},
+      {"description": "Less than", "code": "<", "example": "", "id": "g-op-c-less"},
+      {"description": "Greater than or equal to", "code": ">=", "example": "", "id": "g-op-c-greatereq"},
+      {"description": "Less than or equal to", "code": "<=", "example": "", "id": "g-op-c-lesseq"},
       {"description": "", "code": "", "example": "", "id": "g-op-c-"}
     ],
     "control-flow": [
