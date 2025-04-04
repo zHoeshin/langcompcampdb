@@ -12,5 +12,12 @@
     "author": "Some Dude",
     "description": "A short description to appear in the search menu",
     "tags": ["OOP", "General", "Functional"]
+  },
+  {
+    "name": "Python",
+    "id": "python",
+    "author": "Guido van Rossum",
+    "description": "High level dynamically typed object oriented language",
+    "tags": ["OOP", "General", "Interpreted", "Dynamically typed", "High level"]
   }
 ]
