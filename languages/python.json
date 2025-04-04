@@ -5,7 +5,7 @@
       {"description": "Block/scope", "code": "indentation", "id": "g-block"},
       {"description": "Comment", "code": "# ...", "example": "# some comment", "id": "g-comment"},
       {"description": "Multiline comment(not nestable)", "code": "\"\"\" ... \"\"\"", "example": "\"\"\"some comment goes here\"\"\"", "id": "g-comment-m"},
-      {"description": "Documentation comment", "code": "#- ... -#", "example": "#- params: \n @x : int -#", "id": "g-comment-d"},
+      {"description": "Documentation comment", "code": "\"\"\" ... \"\"\"", "example": "", "id": "g-comment-d"},
       {"description": "Identifier regex", "code": "[A-Za-z_][A-Za-z_0-9]+", "example": "abc123", "id": "g-idregex"},
       {"description": "Case sensitivity", "code": "Sensitive", "id": "g-casesensitive"},
       {"description": "Default capitalization rules", "code": "CamelCase or camelcase", "example": "SomeName anothername", "id": "g-capitalization"}
@@ -26,6 +26,15 @@
       {"description": "Logical NOT", "code": "not", "example": "not a", "id": "g-op-l-not"},
       {"description": "Matrix multiplication", "code": "@", "example": "a @ b", "id": "g-op-matmul"},
       {"description": "Negation", "code": "-", "example": "-a", "id": "g-op-neg"}
+    ],
+    "comparison": [
+      {"description": "Equal", "code": "==", "example": "", "id": "g-op-c-eq"},[
+      {"description": "Not equal", "code": "!=", "example": "", "id": "g-op-c-neq"},[
+      {"description": "Greater than", "code": ">", "example": "", "id": "g-op-c-greater"},[
+      {"description": "Less than", "code": "<", "example": "", "id": "g-op-c-less"},[
+      {"description": "Greater than or equal to", "code": ">=", "example": "", "id": "g-op-c-greatereq"},[
+      {"description": "Less than or equal to", "code": "<=", "example": "", "id": "g-op-c-lesseq"},[
+      {"description": "", "code": "", "example": "", "id": "g-op-c-"}
     ],
     "control-flow": [
       {"description": "if then", "code": "if c:\n\tt", "example": "", "id": "cf-i"},
