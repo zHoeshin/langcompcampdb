@@ -49,7 +49,7 @@
     "functions": [
       {"description": "Define function", "code": "def name(...args):\n\tbody", "example": "", "id": "f-define"},
       {"description": "Call function", "code": "funcname(...args)", "example": "print('Hello', 'World')", "id": "f-call"},
-      {"description": "Return", "code": "", "example": "return\nreturn someval", "id": "f-return"},
+      {"description": "Return", "code": "return", "example": "return\nreturn someval", "id": "f-return"},
       {"description": "Anonymous function", "code": "lambda ...args: body", "example": "lambda a, b: a + b", "id": "f-lambda"}
     ]
   }
