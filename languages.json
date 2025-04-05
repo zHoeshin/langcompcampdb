@@ -19,5 +19,12 @@
     "author": "Guido van Rossum",
     "description": "High level dynamically typed object oriented language",
     "tags": ["OOP", "General", "Interpreted", "Dynamically typed", "High level"]
+  },
+  {
+    "name": "Fir Bytecode",
+    "id": "firbc",
+    "author": "zhoeshin",
+    "description": "In-development VM Bytecode for the Fir language",
+    "tags": ["General", "Interpreted", "Dynamically typed", "Bytecode"]
   }
 ]
