@@ -1,0 +1,48 @@
+{
+  "description": "Bytecode made for the Fir language, still in development",
+  "features": {
+    "general-operations": [
+      {"description": "Performs bynary operation opid on arg1 and arg2 and stores in dest", "code": "OP opid arg1 arg2 dest", "example": "", "id": ""},
+      {"description": "Performs bynary operation opid on arg1 and arg2 and stores in dest", "code": "OPRIGHT opid arg1 arg2 dest", "example": "", "id": ""},
+      {"description": "Performs unary prefix operation opid on arg and stores in dest", "code": "OPPRE opid arg dest", "example": "", "id": ""},
+      {"description": "Performs unary postfix operation opid on arg and stores in dest", "code": "OPPOST opid arg dest", "example": "", "id": ""}
+    ],
+    "control-flow": [
+      {"description": "Jumps to line in local scope", "code": "JUMP line", "example": "", "id": ""},
+      {"description": "Tests if var is truthy", "code": "TEST var", "example": "", "id": ""},
+      {"description": "Jumps to line if TEST yielded truthy", "code": "JUMPTRUE line", "example": "", "id": ""},
+      {"description": "Calls scope if TEST yielded truthy", "code": "CALLTRUE scope", "example": "", "id": ""},
+      {"description": "Calls scope", "code": "CALL scope", "example": "", "id": ""},
+      {"description": "Returns val from scope", "code": "RETURN val", "example": "", "id": ""},
+      {"description": "Stores returned value", "code": "STORERETURN var", "example": "", "id": ""},
+      {"description": "", "code": "", "example": "", "id": ""},
+      {"description": "Calls to scope", "code": "TRY scope", "example": "", "id": ""},
+      {"description": "If the scope called with TRY throws an exception, it will unwind the stack until it finds the scope that started the TRY. In this scope it will store the exception. If the exception is non-null, will jump to line", "code": "CATCHJUMP line", "example": "", "id": ""},
+      {"description": "Came as catchjump but calls to scope", "code": "CATCHCALL scope", "example": "", "id": ""},
+      {"description": "Stops running and exits with code", "code": "EXIT code", "example": "", "id": ""},
+      {"description": "Noop", "code": "NULL", "example": "", "id": ""}
+    ],
+    "variables": [
+      {"description": "Sets dest to source(either reference or shallow copy depending on class)", "code": "SETVAR source dest", "example": "", "id": ""},
+      {"description": "Sets dest to reference source(creates immutable source in the global heap if it was immutable", "code": "SETREF source dest", "example": "", "id": ""},
+      {"description": "Sets dest to shallow copy of source", "code": "SERVAL source dest", "example": "", "id": ""},
+      {"description": "Sets dest to source and then clears the source", "code": "MOVE source dest", "example": "", "id": ""},
+      {"description": "", "code": "", "example": "", "id": ""},
+      {"description": "obj[mem] = var", "code": "SETMEM obj mem var", "example": "", "id": ""},
+      {"description": "var = obj[mem]", "code": "GETMEM obj mem var", "example": "", "id": ""},
+      {"description": "", "code": "", "example": "", "id": ""},
+      {"description": "", "code": "", "example": "", "id": ""},
+      {"description": "", "code": "", "example": "", "id": ""},
+      {"description": "", "code": "", "example": "", "id": ""},
+      {"description": "", "code": "", "example": "", "id": ""},
+      {"description": "", "code": "", "example": "", "id": ""},
+      {"description": "", "code": "", "example": "", "id": ""},
+      {"description": "", "code": "", "example": "", "id": ""},
+      {"description": "", "code": "", "example": "", "id": ""},
+      {"description": "", "code": "", "example": "", "id": ""},
+      {"description": "", "code": "", "example": "", "id": ""},
+      {"description": "", "code": "", "example": "", "id": ""},
+      {"description": "", "code": "", "example": "", "id": ""}
+    ]
+  }
+}
