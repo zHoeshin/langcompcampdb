@@ -13,7 +13,6 @@
     "general-operators": [
       {"type": "column", "id": "precedence"},
       {"type": "header", "code": "OP", "description": "Name", "example": "Example", "precedence": "Precedence"},
-      {"type": "wrapper", "before": "#", "after": "", "id": "code"},
       {"description": "Addition", "code": "+", "example": "a + b", "id": "g-op-add", "precedence": "7"},
       {"description": "Substraction", "code": "-", "example": "a - b", "id": "g-op-sub", "precedence": "7"},
       {"description": "Multiplication", "code": "*", "example": "a * b", "id": "g-op-mul", "precedence": "6"},
