@@ -6,7 +6,7 @@
       {"description": "Comment", "code": "# ...", "example": "# some comment", "id": "g-comment"},
       {"description": "Multiline comment(not nestable)", "code": "\"\"\" ... \"\"\"", "example": "\"\"\"some comment goes here\"\"\"", "id": "g-comment-m"},
       {"description": "Documentation comment", "code": "\"\"\" ... \"\"\"", "example": "", "id": "g-comment-d"},
-      {"description": "Identifier regex", "code": "[A-Za-z_][A-Za-z_0-9]+", "example": "abc123", "id": "g-idregex"},
+      {"description": "Identifier regex", "code": "[A-Za-z_][A-Za-z_0-9]*", "example": "abc123", "id": "g-idregex"},
       {"description": "Case sensitivity", "code": "Sensitive", "id": "g-casesensitive"},
       {"description": "Default capitalization rules", "code": "CamelCase or camelcase", "example": "SomeName anothername", "id": "g-capitalization"}
     ],
@@ -14,15 +14,15 @@
       {"type": "column", "id": "precedence"},
       {"type": "header", "code": "OP", "description": "Name", "example": "Example", "precedence": "Precedence"},
       {"description": "Addition", "code": "+", "example": "a + b", "id": "g-op-add", "precedence": "7"},
-      {"description": "Substraction", "code": "-", "example": "a - b", "id": "g-op-sub", "precedence": "7"},
+      {"description": "Subtraction", "code": "-", "example": "a - b", "id": "g-op-sub", "precedence": "7"},
       {"description": "Multiplication", "code": "*", "example": "a * b", "id": "g-op-mul", "precedence": "6"},
       {"description": "Division", "code": "/", "example": "a / b", "id": "g-op-div-float", "precedence": "6"},
-      {"description": "Exponentiation", "code": "**", "example": "a ^ b", "id": "g-op-exp", "precedence": "4"},
+      {"description": "Exponentiation", "code": "**", "example": "a ** b", "id": "g-op-exp", "precedence": "4"},
       {"description": "Modulo", "code": "%", "example": "a % b", "id": "g-op-modulo", "precedence": "6"},
       {"description": "Bitwise AND", "code": "&", "example": "a & b", "id": "g-op-b-and", "precedence": "9"},
       {"description": "Bitwise OR", "code": "|", "example": "a | b", "id": "g-op-b-or", "precedence": "11"},
       {"description": "Bitwise XOR", "code": "^", "example": "a ^ b", "id": "g-op-b-xor", "precedence": "10"},
-      {"description": "Bitwose NOT", "code": "~", "example": "~a", "id": "g-op-b-not", "precedence": "5"},
+      {"description": "Bitwise NOT", "code": "~", "example": "~a", "id": "g-op-b-not", "precedence": "5"},
       {"description": "Logical AND", "code": "and", "example": "a and b", "id": "g-op-l-and", "precedence": "14"},
       {"description": "Logical OR", "code": "or", "example": "a or b", "id": "g-op-l-or", "precedence": "15"},
       {"description": "Logical NOT", "code": "not", "example": "not a", "id": "g-op-l-not", "precedence": "13"},
@@ -54,6 +54,17 @@
       {"description": "Call function", "code": "funcname(...args)", "example": "print('Hello', 'World')", "id": "f-call"},
       {"description": "Return", "code": "return", "example": "``return\nreturn someval``", "id": "f-return"},
       {"description": "Anonymous function", "code": "lambda ...args: body", "example": "lambda a, b: a + b", "id": "f-lambda"}
+    ],
+    "objects": [
+      {"description": "CLass Identifier", "code": "class", "example": "``class Foo:\n\t...``", "id": "o-class"},
+      {"description": "Structure Identifier", "code": "@dataclass\nclass", "example": "``from dataclasses import dataclass\n@dataclass\nclass Foo:\n\t...``", "id": "o-struct"},
+      {"description": "Self value", "code": "first method param", "example": "``class Foo:\n\tdef __init__(self):\n\t\t...``", "id": "o-self"},
+      {"description": "Constructor", "code": "def __init__(...)", "example": "``class Foo:\n\tdata: int\n\tdef __init__(self, d):\n\t\tself.data = d``", "id": "o-constructor"},
+      {"description": "Method calling", "code": "object.method()", "example": "player.damage(5)", "id": "o-method"},
+      {"description": "Member accessing", "code": "object.member", "example": "player.health", "id": "o-member-call"},
+      {"description": "Method definition", "code": "def name(...args):\n\tbody", "example": "``class Foo:\n\tdata: int\n\tdef setValue(self, d):\n\t\tself.data = d``", "id": "o-method-define"},
+      {"description": "Inheritance", "code": "()", "example": "class Foo(Baz):\n\t...", "id": "o-inheritance"},
+      {"description": "Instantiation", "code": "class(...args)", "example": "Foo(5)", "id": "o-new"}
     ]
   }
 }
