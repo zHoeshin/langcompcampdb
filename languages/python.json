@@ -11,6 +11,8 @@
       {"description": "Default capitalization rules", "code": "CamelCase or camelcase", "example": "SomeName anothername", "id": "g-capitalization"}
     ],
     "general-operators": [
+      {"type": "wrapper", "before": "`", "after": "`", "id": "code"},
+      {"type": "wrapper", "before": "`", "after": "`", "id": "example"},
       {"description": "Addition", "code": "+", "example": "a + b", "id": "g-op-add"},
       {"description": "Substraction", "code": "-", "example": "a - b", "id": "g-op-sub"},
       {"description": "Multiplication", "code": "*", "example": "a * b", "id": "g-op-mul"},
