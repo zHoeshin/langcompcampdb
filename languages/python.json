@@ -30,27 +30,29 @@
       {"description": "Negation", "code": "-", "example": "-a", "id": "g-op-neg", "precedence": "5"}
     ],
     "comparison": [
-      {"description": "Equal", "code": "==", "example": "", "id": "g-op-c-eq"},
-      {"description": "Not equal", "code": "!=", "example": "", "id": "g-op-c-neq"},
-      {"description": "Greater than", "code": ">", "example": "", "id": "g-op-c-greater"},
-      {"description": "Less than", "code": "<", "example": "", "id": "g-op-c-less"},
-      {"description": "Greater than or equal to", "code": ">=", "example": "", "id": "g-op-c-greatereq"},
-      {"description": "Less than or equal to", "code": "<=", "example": "", "id": "g-op-c-lesseq"}
+      {"type": "column", "id": "precedence"},
+      {"type": "header", "code": "OP", "description": "Name", "example": "Example", "precedence": "Precedence"},
+      {"description": "Equal", "code": "==", "example": "1==1", "id": "g-op-c-eq", "precedence": "12"},
+      {"description": "Not equal", "code": "!=", "example": "1!=2", "id": "g-op-c-neq", "precedence": "12"},
+      {"description": "Greater than", "code": ">", "example": "2>1", "id": "g-op-c-greater", "precedence": "12"},
+      {"description": "Less than", "code": "<", "example": "1<2", "id": "g-op-c-less", "precedence": "12"},
+      {"description": "Greater than or equal to", "code": ">=", "example": "1>=1", "id": "g-op-c-greatereq", "precedence": "12"},
+      {"description": "Less than or equal to", "code": "<=", "example": "2<=2", "id": "g-op-c-lesseq", "precedence": "12"}
     ],
     "control-flow": [
-      {"description": "if then", "code": "if c:\n\tt", "example": "", "id": "cf-i"},
+      {"description": "if then", "code": "if c:\n\tt", "example": "``if a == 5:\n\tprint('5')``", "id": "cf-i"},
       {"description": "if then-else", "code": "if c1:\n\tt\nelif c2:\n\tf", "example": "", "id": "cf-ie"},
       {"description": "if then-else if then-else", "code": "if c1:\n\tt\nelif c2:\n\tf\nelif:\n\te", "example": "", "id": "cf-iee"},
-      {"description": "while", "code": "while c: ...", "example": "", "id": "cf-while"},
+      {"description": "while", "code": "while c: ...", "example": "``while timer < 10:\n\ttimer += 1``", "id": "cf-while"},
       {"description": "for", "code": "for i in iterable: ...", "example": "for a in array: print(a)", "id": "cf-for-in"},
-      {"description": "try-except", "code": "try:\n\ts\nexcept e:\n\td", "example": "", "id": "cf-try"},
-      {"description": "continue", "code": "continue", "example": "", "id": "cf-continue"},
-      {"description": "break", "code": "break", "example": "", "id": "cf-break"}
+      {"description": "try-except", "code": "try:\n\ts\nexcept e:\n\td", "example": "``try:\n\tprint(5/0)\nexcept ZeroDivisionError:\n\tprint('Cannot divide by 0')``", "id": "cf-try"},
+      {"description": "continue", "code": "continue", "example": " ", "id": "cf-continue"},
+      {"description": "break", "code": "break", "example": " ", "id": "cf-break"}
     ],
     "functions": [
       {"description": "Define function", "code": "def name(...args):\n\tbody", "example": "", "id": "f-define"},
       {"description": "Call function", "code": "funcname(...args)", "example": "print('Hello', 'World')", "id": "f-call"},
-      {"description": "Return", "code": "return", "example": "return\nreturn someval", "id": "f-return"},
+      {"description": "Return", "code": "return", "example": "``return\nreturn someval``", "id": "f-return"},
       {"description": "Anonymous function", "code": "lambda ...args: body", "example": "lambda a, b: a + b", "id": "f-lambda"}
     ]
   }
