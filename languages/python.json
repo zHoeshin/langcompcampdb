@@ -41,8 +41,8 @@
     ],
     "control-flow": [
       {"description": "if then", "code": "if c:\n\tt", "example": "``if a == 5:\n\tprint('5')``", "id": "cf-i"},
-      {"description": "if then-else", "code": "if c1:\n\tt\nelif c2:\n\tf", "example": "", "id": "cf-ie"},
-      {"description": "if then-else if then-else", "code": "if c1:\n\tt\nelif c2:\n\tf\nelif:\n\te", "example": "", "id": "cf-iee"},
+      {"description": "if then-else", "code": "if c1:\n\tt\nelif c2:\n\tf", "example": "``if a == 5:\n\tprint('5')\nelse:\n\tprint('?')``", "id": "cf-ie"},
+      {"description": "if then-else if then-else", "code": "if c1:\n\tt\nelif c2:\n\tf\nelif:\n\te", "example": "``if a == 5:\n\tprint('5')\nelif a == '-2'\n\tprint('t')\nelse:\n\tprint('?')``", "id": "cf-iee"},
       {"description": "while", "code": "while c: ...", "example": "``while timer < 10:\n\ttimer += 1``", "id": "cf-while"},
       {"description": "for", "code": "for i in iterable: ...", "example": "for a in array: print(a)", "id": "cf-for-in"},
       {"description": "try-except", "code": "try:\n\ts\nexcept e:\n\td", "example": "``try:\n\tprint(5/0)\nexcept ZeroDivisionError:\n\tprint('Cannot divide by 0')``", "id": "cf-try"},
@@ -50,7 +50,7 @@
       {"description": "break", "code": "break", "example": " ", "id": "cf-break"}
     ],
     "functions": [
-      {"description": "Define function", "code": "def name(...args):\n\tbody", "example": "", "id": "f-define"},
+      {"description": "Define function", "code": "def name(...args):\n\tbody", "example": "``def foo(name):\n\tprint(f'Hello, {name}!')``", "id": "f-define"},
       {"description": "Call function", "code": "funcname(...args)", "example": "print('Hello', 'World')", "id": "f-call"},
       {"description": "Return", "code": "return", "example": "``return\nreturn someval``", "id": "f-return"},
       {"description": "Anonymous function", "code": "lambda ...args: body", "example": "lambda a, b: a + b", "id": "f-lambda"}
