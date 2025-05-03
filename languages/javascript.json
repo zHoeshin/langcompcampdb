@@ -2,14 +2,13 @@
   "description": "General purpose dynamically typed object-oriented and functional language used primarily for web development",
   "features": {
     "general": [
-      {"description": "Block/scope", "code": "curly braces {}", "id": "g-block"},
-      {"description": "Comment", "code": "// ...", "example": "// some comment", "id": "g-comment"},
-      {"description": "Multiline comment", "code": "/* ... */", "example": "/* some comment goes here */", "id": "g-comment-m"},
-      {"description": "Documentation comment", "code": "/** ... */", "example": "/** This is a doc comment */", "id": "g-comment-d"},
-      {"description": "Identifier regex", "code": "[A-Za-z_$][A-Za-z0-9_$]*", "example": "myVar_1", "id": "g-idregex"},
+      {"description": "Block/scope", "code": "{}", "id": "g-block"},
+      {"description": "Comment", "code": "// ...", "example": "// comment", "id": "g-comment"},
+      {"description": "Multiline comment", "code": "/* ... */", "example": "/* comment */", "id": "g-comment-m"},
+      {"description": "Documentation comment", "code": "/** ... */", "example": "/** doc comment */", "id": "g-comment-d"},
+      {"description": "Identifier regex", "code": "[A-Za-z_$][A-Za-z0-9_$]*", "example": "$someVar5", "id": "g-idregex"},
       {"description": "Case sensitivity", "code": "Sensitive", "id": "g-casesensitive"},
-      {"description": "Default capitalization rules", "code": "camelCase or PascalCase", "example": "someVar SomeClass", "id": "g-capitalization"},
-      {"description": "Typing", "code": "dynamically typed (optionally via TypeScript)", "example": "", "id": "g-type"}
+      {"description": "Default capitalization rules", "code": "camelCase or PascalCase", "example": "someVar SomeClass", "id": "g-capitalization"}
     ],
     "general-operators": [
       {"type": "column", "id": "precedence"},
@@ -42,28 +41,28 @@
       {"description": "Less than or equal to", "code": "<=", "example": "2 <= 2", "id": "g-op-c-lesseq", "precedence": "11"}
     ],
     "control-flow": [
-      {"description": "if then", "code": "if (cond) { ... }", "example": "if (a === 5) {\n  console.log('5');\n}", "id": "cf-i"},
-      {"description": "if then-else", "code": "if (c1) { ... } else { ... }", "example": "if (a === 5) {\n  ...\n} else {\n  ...\n}", "id": "cf-ie"},
-      {"description": "if-else if-else", "code": "if (c1) {...} else if (c2) {...} else {...}", "example": "if (a === 5) {...} else if (a === -2) {...} else {...}", "id": "cf-iee"},
-      {"description": "while", "code": "while (cond) { ... }", "example": "while (x < 10) {\n  x++;\n}", "id": "cf-while"},
-      {"description": "for loop", "code": "for (init; cond; inc) { ... }", "example": "for (let i = 0; i < 5; i++) {\n  ...\n}", "id": "cf-for"},
-      {"description": "for-in loop", "code": "for (key in obj) { ... }", "example": "for (let key in obj) { console.log(key); }", "id": "cf-for-in"},
-      {"description": "for-of loop", "code": "for (item of iterable) { ... }", "example": "for (let val of arr) { console.log(val); }", "id": "cf-for-of"},
-      {"description": "try-catch", "code": "try { ... } catch (e) { ... }", "example": "try {\n  ...\n} catch (e) {\n  console.error(e);\n}", "id": "cf-try"},
-      {"description": "continue", "code": "continue", "example": "for (...) {\n  if (cond) continue;\n}", "id": "cf-continue"},
-      {"description": "break", "code": "break", "example": "for (...) {\n  if (cond) break;\n}", "id": "cf-break"}
+      {"description": "if then", "code": "if (cond) { ... }", "example": "if (a === 5) {\n\tconsole.log('5');\n}", "id": "cf-i"},
+      {"description": "if then-else", "code": "if (c1) { ... } else { ... }", "example": "if (a === 5) {\n\t...\n} else {\n\t...\n}", "id": "cf-ie"},
+      {"description": "if-else if-else", "code": "if (c1) {...} else if (c2) {...} else {...}", "example": "if (a === 5) {\n\t...\n} else if (a === -2) {\n\t...\n} else {\n\t...\n}", "id": "cf-iee"},
+      {"description": "while", "code": "while (cond) { ... }", "example": "while (x < 10) {\n\tx++;\n}", "id": "cf-while"},
+      {"description": "for loop", "code": "for (init; cond; inc) { ... }", "example": "for (let i = 0; i < 5; i++) {\n\t...\n}", "id": "cf-for"},
+      {"description": "for-in loop", "code": "for (key in obj) { ... }", "example": "for (let key in obj) {\n\tconsole.log(key);\n}", "id": "cf-for-key"},
+      {"description": "for-of loop", "code": "for (item of iterable) { ... }", "example": "for (let val of arr) {\n\tconsole.log(val);\n}", "id": "cf-for-val"},
+      {"description": "try-catch", "code": "try { ... } catch (e) { ... }", "example": "try {\n\t...\n} catch (e) {\n\tconsole.error(e);\n}", "id": "cf-try"},
+      {"description": "continue", "code": "continue", "example": " ", "id": "cf-continue"},
+      {"description": "break", "code": "break", "example": " ", "id": "cf-break"}
     ],
     "functions": [
-      {"description": "Define function", "code": "function name(...args) { ... }", "example": "function greet(name) {\n  console.log(`Hello, ${name}`);\n}", "id": "f-define"},
+      {"description": "Define function", "code": "function name(...args) { ... }", "example": "function greet(name) {\n\tconsole.log(`Hello, ${name}`);\n}", "id": "f-define"},
       {"description": "Arrow function", "code": "const name = (...args) => { ... }", "example": "const add = (a, b) => a + b;", "id": "f-arrow"},
       {"description": "Call function", "code": "funcname(...args)", "example": "greet('World');", "id": "f-call"},
       {"description": "Return", "code": "return", "example": "return x;", "id": "f-return"},
       {"description": "Anonymous function", "code": "function (...) { ... }", "example": "setTimeout(function() { ... }, 1000);", "id": "f-lambda"}
     ],
     "objects": [
-      {"description": "Class declaration", "code": "class ClassName { ... }", "example": "class Foo {\n  constructor() { }\n}", "id": "o-class"},
-      {"description": "Constructor", "code": "constructor(...args) { ... }", "example": "constructor(val) {\n  this.x = val;\n}", "id": "o-constructor"},
-      {"description": "Method definition", "code": "methodName(...) { ... }", "example": "setX(val) {\n  this.x = val;\n}", "id": "o-method-define"},
+      {"description": "Class declaration", "code": "class ClassName { ... }", "example": "class Foo {\n\tconstructor() { }\n}", "id": "o-class"},
+      {"description": "Constructor", "code": "constructor(...args) { ... }", "example": "constructor(val) {\n\tthis.x = val;\n}", "id": "o-constructor"},
+      {"description": "Method definition", "code": "methodName(...) { ... }", "example": "setX(val) {\n\tthis.x = val;\n}", "id": "o-method-define"},
       {"description": "Method calling", "code": "object.method()", "example": "foo.bar()", "id": "o-method"},
       {"description": "Member accessing", "code": "object.member", "example": "foo.bar", "id": "o-member-call"},
       {"description": "Instantiation", "code": "new ClassName(...args)", "example": "let f = new Foo(5);", "id": "o-new"},
