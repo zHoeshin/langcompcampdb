@@ -1,0 +1,75 @@
+{
+  "description": "General purpose statically typed object oriented language with modern language features",
+  "features": {
+    "general": [
+      {"description": "Block/scope", "code": "{ ... }", "id": "g-block"},
+      {"description": "Comment", "code": "// ...", "example": "// some comment", "id": "g-comment"},
+      {"description": "Multiline comment", "code": "/* ... */", "example": "/* some comment */", "id": "g-comment-m"},
+      {"description": "Documentation comment", "code": "/// ...", "example": "/// This is a doc comment", "id": "g-comment-d"},
+      {"description": "Identifier regex", "code": "[A-Za-z_][A-Za-z_0-9]*", "example": "MyVar123", "id": "g-idregex"},
+      {"description": "Case sensitivity", "code": "Sensitive", "id": "g-casesensitive"},
+      {"description": "Default capitalization rules", "code": "PascalCase or camelCase", "example": "MyClass myVariable", "id": "g-capitalization"},
+      {"description": "Typing", "code": "type ident", "example": "int x", "id": "g-type"}
+    ],
+    "general-operators": [
+      {"type": "column", "id": "precedence"},
+      {"type": "header", "code": "OP", "description": "Name", "example": "Example", "precedence": "Precedence"},
+      {"description": "Addition", "code": "+", "example": "a + b", "id": "g-op-add", "precedence": "5"},
+      {"description": "Subtraction", "code": "-", "example": "a - b", "id": "g-op-sub", "precedence": "5"},
+      {"description": "Multiplication", "code": "*", "example": "a * b", "id": "g-op-mul", "precedence": "4"},
+      {"description": "Division", "code": "/", "example": "a / b", "id": "g-op-div-float", "precedence": "4"},
+      {"description": "Modulo", "code": "%", "example": "a % b", "id": "g-op-modulo", "precedence": "4"},
+      {"description": "Bitwise AND", "code": "&", "example": "a & b", "id": "g-op-b-and", "precedence": "8"},
+      {"description": "Bitwise OR", "code": "|", "example": "a | b", "id": "g-op-b-or", "precedence": "10"},
+      {"description": "Bitwise XOR", "code": "^", "example": "a ^ b", "id": "g-op-b-xor", "precedence": "9"},
+      {"description": "Bitwise NOT", "code": "~", "example": "~a", "id": "g-op-b-not", "precedence": "3"},
+      {"description": "Logical AND", "code": "&&", "example": "a && b", "id": "g-op-l-and", "precedence": "11"},
+      {"description": "Logical OR", "code": "||", "example": "a || b", "id": "g-op-l-or", "precedence": "12"},
+      {"description": "Logical NOT", "code": "!", "example": "!a", "id": "g-op-l-not", "precedence": "3"},
+      {"description": "Negation", "code": "-", "example": "-a", "id": "g-op-neg", "precedence": "3"}
+    ],
+    "comparison": [
+      {"type": "column", "id": "precedence"},
+      {"type": "header", "code": "OP", "description": "Name", "example": "Example", "precedence": "Precedence"},
+      {"description": "Equal", "code": "==", "example": "1 == 1", "id": "g-op-c-eq", "precedence": "7"},
+      {"description": "Not equal", "code": "!=", "example": "1 != 2", "id": "g-op-c-neq", "precedence": "7"},
+      {"description": "Greater than", "code": ">", "example": "2 > 1", "id": "g-op-c-greater", "precedence": "6"},
+      {"description": "Less than", "code": "<", "example": "1 < 2", "id": "g-op-c-less", "precedence": "6"},
+      {"description": "Greater than or equal to", "code": ">=", "example": "1 >= 1", "id": "g-op-c-greatereq", "precedence": "6"},
+      {"description": "Less than or equal to", "code": "<=", "example": "2 <= 2", "id": "g-op-c-lesseq", "precedence": "6"}
+    ],
+    "control-flow": [
+      {"description": "if then", "code": "if (c) { t }", "example": "if (a == 5) {\n\tConsole.WriteLine(\"5\");\n}", "id": "cf-i"},
+      {"description": "if then-else", "code": "if (c1) { t } else { f }", "example": "if (a == 5) {\n\tConsole.WriteLine(\"5\");\n} else {\n\tConsole.WriteLine(\"?\");\n}", "id": "cf-ie"},
+      {"description": "if else if else", "code": "if (c1) { t } else if (c2) { f } else { e }", "example": "if (a == 5) {\n\t...\n} else if (a == 2) {\n\t...\n} else {\n\t...\n}", "id": "cf-iee"},
+      {"description": "while", "code": "while (c) { ... }", "example": "while (timer < 10) {\n\ttimer++;\n}", "id": "cf-while"},
+      {"description": "for", "code": "for (init; cond; update) { ... }", "example": "for (int i = 0; i < 5; i++) {\n\tConsole.WriteLine(i);\n}", "id": "cf-for"},
+      {"description": "foreach", "code": "foreach (var x in xs) { ... }", "example": "foreach (var a in array) {\n\tConsole.WriteLine(a);\n}", "id": "cf-for-val"},
+      {"description": "try-catch", "code": "try { s } catch (e) { d }", "example": "try {\n\tvar x = 5 / 0;\n} catch (DivideByZeroException) {\n\tConsole.WriteLine(\"Can't divide by 0\");\n}", "id": "cf-try"},
+      {"description": "continue", "code": "continue", "example": "continue;", "id": "cf-continue"},
+      {"description": "break", "code": "break", "example": "break;", "id": "cf-break"}
+    ],
+    "functions": [
+      {"description": "Define function", "code": "type name(...args) { body }", "example": "void SayHello(string name) {\n\tConsole.WriteLine($\"Hello, {name}!\");\n}", "id": "f-define"},
+      {"description": "Call function", "code": "funcname(...args)", "example": "SayHello(\"World\");", "id": "f-call"},
+      {"description": "Return", "code": "return ...;", "example": "return;\nreturn someVal;", "id": "f-return"},
+      {"description": "Anonymous function", "code": "delegate (...) { body } or (...) => expr", "example": "(a, b) => a + b", "id": "f-lambda"}
+    ],
+    "objects": [
+      {"description": "Class Identifier", "code": "class", "example": "class Foo { }", "id": "o-class"},
+      {"description": "Struct Identifier", "code": "struct", "example": "struct Point { public int X, Y; }", "id": "o-struct"},
+      {"description": "Self value", "code": "this", "example": "this.value = value;", "id": "o-self"},
+      {"description": "Constructor", "code": "public ClassName(...)", "example": "public Foo(int d) { this.data = d; }", "id": "o-constructor"},
+      {"description": "Method calling", "code": "object.Method()", "example": "player.Damage(5);", "id": "o-method"},
+      {"description": "Member accessing", "code": "object.member", "example": "player.Health", "id": "o-member-call"},
+      {"description": "Method definition", "code": "returnType name(...args) { body }", "example": "public void SetValue(int d) { this.data = d; }", "id": "o-method-define"},
+      {"description": "Inheritance", "code": ": ParentClass", "example": "class Foo : Bar { }", "id": "o-inheritance"},
+      {"description": "Instantiation", "code": "new ClassName(...args)", "example": "new Foo(5);", "id": "o-new"}
+    ],
+    "modules": [
+      {"description": "Import/using", "code": "using Namespace;", "example": "using System.Text;", "id": "m-i"},
+      {"description": "Alias namespace", "code": "using alias = Namespace;", "example": "using IO = System.IO;", "id": "m-i-a"},
+      {"description": "Export/assembly control", "code": "public/internal/private", "example": "public class Foo { }", "id": "m-e-s"}
+    ]
+  }
+}
