@@ -65,6 +65,13 @@
       {"description": "Method definition", "code": "def name(...args):\n\tbody", "example": "``class Foo:\n\tdata: int\n\tdef setValue(self, d):\n\t\tself.data = d``", "id": "o-method-define"},
       {"description": "Inheritance", "code": "()", "example": "class Foo(Baz):\n\t...", "id": "o-inheritance"},
       {"description": "Instantiation", "code": "class(...args)", "example": "Foo(5)", "id": "o-new"}
+    ],
+    "modules": [
+      {"description": "Import", "code": "import package", "example": "", "id": "m-i"},
+      {"description": "Selective import", "code": "from package import item1, item2...", "example": "from colorama import Fore, Back", "id": "m-i-s"},
+      {"description": "Import all into current scope", "code": "from package import *", "example": "from colorama import *", "id": "m-i-dump"},
+      {"description": "Aliasing", "code": "import package as alias", "example": "import colorama as c", "id": "m-i-a"},
+      {"description": "Selective export", "code": "__all__ = [...]", "example": "__all__ = [Fore, Back]", "id": "m-e-s"}
     ]
   }
 }
