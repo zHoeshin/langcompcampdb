@@ -8,7 +8,8 @@
       {"description": "Documentation comment", "code": "\"\"\" ... \"\"\"", "example": "", "id": "g-comment-d"},
       {"description": "Identifier regex", "code": "[A-Za-z_][A-Za-z_0-9]*", "example": "abc123", "id": "g-idregex"},
       {"description": "Case sensitivity", "code": "Sensitive", "id": "g-casesensitive"},
-      {"description": "Default capitalization rules", "code": "CamelCase or camelcase", "example": "SomeName anothername", "id": "g-capitalization"}
+      {"description": "Default capitalization rules", "code": "CamelCase or camelcase", "example": "SomeName anothername", "id": "g-capitalization"},
+      {"description": "Typing", "code": "ident: type", "example": "x: int", "id": "g-type"}
     ],
     "general-operators": [
       {"type": "column", "id": "precedence"},
