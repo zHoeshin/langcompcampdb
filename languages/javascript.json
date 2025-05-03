@@ -54,10 +54,10 @@
     ],
     "functions": [
       {"description": "Define function", "code": "function name(...args) { ... }", "example": "function greet(name) {\n\tconsole.log(`Hello, ${name}`);\n}", "id": "f-define"},
-      {"description": "Arrow function", "code": "const name = (...args) => { ... }", "example": "const add = (a, b) => a + b;", "id": "f-arrow"},
+      {"description": "Lambda via arrow function", "code": "const name = (...args) => { ... }", "example": "const add = (a, b) => a + b;", "id": "f-lambda"},
       {"description": "Call function", "code": "funcname(...args)", "example": "greet('World');", "id": "f-call"},
-      {"description": "Return", "code": "return", "example": "return x;", "id": "f-return"},
-      {"description": "Anonymous function", "code": "function (...) { ... }", "example": "setTimeout(function() { ... }, 1000);", "id": "f-lambda"}
+      {"description": "Return", "code": "return", "example": "return;\nreturn x;", "id": "f-return"},
+      {"description": "Lambda function", "code": "function (...) { ... }", "example": "setTimeout(function() { ... }, 1000);", "id": "f-lambda"}
     ],
     "objects": [
       {"description": "Class declaration", "code": "class ClassName { ... }", "example": "class Foo {\n\tconstructor() { }\n}", "id": "o-class"},
