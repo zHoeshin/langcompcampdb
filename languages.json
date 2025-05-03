@@ -28,6 +28,13 @@
     "tags": ["OOP", "High level"]
   },
   {
+    "name": "C#",
+    "id": "csharp",
+    "author": "Microsoft (Anders Hejlsberg)",
+    "description": "Modern, statically typed, object-oriented language designed for the .NET platform, used in enterprise, desktop, and game development",
+    "tags": ["OOP", "Statically typed", "Compiled"]
+  },
+  {
     "name": "Fir Bytecode",
     "id": "firbc",
     "author": "zhoeshin",
