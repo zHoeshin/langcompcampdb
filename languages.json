@@ -21,6 +21,13 @@
     "tags": ["OOP", "General", "Interpreted", "Dynamically typed", "High level"]
   },
   {
+    "name": "JavaScript",
+    "id": "javascript",
+    "author": "Brendan Eich",
+    "description": "High level untyped object oriented language, widespread because of/and used of webdev",
+    "tags": ["OOP", "High level"]
+  },
+  {
     "name": "Fir Bytecode",
     "id": "firbc",
     "author": "zhoeshin",
