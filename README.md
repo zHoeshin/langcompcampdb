@@ -1,4 +1,7 @@
 ## How to contribute?
+Schemas:
+- Languages list: https://github.com/zHoeshin/LangCompCamp/blob/main/languages-schema
+- Individual language files: https://github.com/zHoeshin/LangCompCamp/blob/main/language-schema
 1. Add your language into the `language.json` in the database. languages.json stores an array of `{"name": string, "id": string, "author": string, "description": string, "tags": array[string]}`
 2. Add your language file into the `languages/` folder. The file must be named `<language-id>.json` where `language-id` is the id you specified for your language in the `languages.json`
 3. ### Language file
