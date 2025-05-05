@@ -1,19 +1,5 @@
 [
   {
-    "name": "Some Language",
-    "id": "some-test-lang",
-    "author": "Some Dude",
-    "description": "A short description to appear in the search menu",
-    "tags": ["OOP", "General", "Compiled"]
-  },
-  {
-    "name": "Other Language",
-    "id": "some-other-lang",
-    "author": "Some Dude",
-    "description": "A short description to appear in the search menu",
-    "tags": ["OOP", "General", "Functional"]
-  },
-  {
     "name": "Python",
     "id": "python",
     "author": "Guido van Rossum",
@@ -39,6 +25,6 @@
     "id": "firbc",
     "author": "zhoeshin",
     "description": "In-development VM Bytecode for the Fir language",
-    "tags": ["General", "Interpreted", "Dynamically typed", "Bytecode"]
+    "tags": ["General", "Interpreted", "Dynamically typed", "Bytecode", "WIP"]
   }
 ]
